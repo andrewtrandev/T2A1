@@ -1,16 +1,17 @@
 
 https://coderacademy.instructure.com/courses/288/assignments/1464
 
-## Q1.	Describe the architecture of a typical Rails application
+## Q1.	Describe the architecture of a typical Rails application (200-300)
+
+The typical architecture off a Rails application relies on a framework known as the Model-View-Controller or MVC. It splits the functionality of the rails application into three distinct parts. These 3 parts are the Model which primarily deals with the database and business logic,
+the view which handles user interfaces and graphical components that the user will see and lastly the controller which acts as 
 
 
-
-
-
-
+##### References
+* https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
 
 ---
-## Q2.	Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database
+## Q2.	Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database (150-250)
 
 ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.
 
@@ -20,8 +21,6 @@ ACME Corporation is very big on project management, documentation and process. T
 
 ---
 ## Q3. Discuss the implementation of Agile project management methodology (200-300) 
-Discuss questions -require an in-depth answer that takes into account all aspects of the debate concerning a topic.
-Why choose the agile method versus alternatives such as the waterfall method?
 
 
 The Agile methodology was developed with the goal of improving software development. Agile's four main values are an emphasis 
@@ -46,77 +45,114 @@ Below is an example of a 3 cycles or sprints linking together.
 In today's age with the rapid development of start-ups and software, organisations have to be flexible and quick to respond to customer's needs. The agile method caters to this need by allowing for rapid prototyping and development of software, this allows customers to examine the progress of software development quickly, in contrast to the waterfall methodology, in which, projects may take years before they have a product to show.
 
 
-### References     
-https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
+##### References   
+* https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
     
-https://www.infoworld.com/article/3237508/what-is-agile-methodology-modern-software-development-explained.html
+* https://www.infoworld.com/article/3237508/what-is-agile-methodology-modern-software-development-explained.html
 
-https://www.guru99.com/waterfall-vs-agile.html
+* https://www.guru99.com/waterfall-vs-agile.html
 
-https://www.projectmanager.com/software/use-cases/waterfall-methodology
+* https://www.projectmanager.com/software/use-cases/waterfall-methodology
 
-https://www.mendix.com/blog/agile-process-why-you-need-feedback-loops-both-during-and-after-sprints/
+* https://www.mendix.com/blog/agile-process-why-you-need-feedback-loops-both-during-and-after-sprints/
 
-## Q4.	Provide an overview and description of a standard source control workflow
-
-
+## Q4.	Provide an overview and description of a standard source control workflow (100-200)
 
 
+
+##### References
 
 ---
-## Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing)
+## Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
 
 
 Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
 
 
 
-
+##### References
 
 ---
 
 Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
 
-## Q6.	Discuss and analyse requirements related to information system security and how they relate to the project
+## Q6.	Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
 
 Discuss - for and against
 Analyse - break the essay topic down into fundamental parts
 
+##### References
 
-
-## Q7. Discuss common methods of protecting information and data and how you would apply them to the project
+## Q7. Discuss common methods of protecting information and data and how you would apply them to the project (100-200)
 
 A common method of protecting information and data would be to implement authentication, this could be done through the use of a gem such as Devise to require users to have a login and password before they could access the application. A benefit of authentication is this would protect personal user data and information in a quick and simple way. Cons of using a user login system, is that it's up to users to be vigilant with their passwords and to also generate complex and unique passwords.
 
 We could also implement authorisation as a method to protect data, this would restrict the permissions of users. For example we would only want users to be able to change their contact details and not someone else's. This also ties into the principle of giving entities the fewest privileges possible. For example an admin may have the power to remove a user but we would disable that function for anyone who wouldn't require it e.g a user or even an employee. This reduces our risk to vulnerabilities because if you gave that permission to users or employees who didn't require it, they also become points of failure.
 
 
-Ref
+##### References
 * https://www.keycdn.com/blog/web-application-security-best-practices
 * https://www.synopsys.com/blogs/software-security/complete-web-application-security-testing-checklist/
 
 ---
-## Q8.	Research what your legal obligations are in relation to handling user data and how they can be met for the project
+## Q8.	Research what your legal obligations are in relation to handling user data and how they can be met for the project (100-200)
+
+According to the Office of the Australian Information Commissioner (OIAC), any organisation must notify individuals when a data breach is likely to cause serious harm to the individual.
+
+The OIAC also offers a set of guidelines known as The Australian Privacy Principles (APP). With these guidelines as a reference we can construct a general idea of how we should be handling user data.
+
+User data can be collected, used, disclosed, stored, destroyed and de-identified.
+Before we even write any code we can plan out what we want to do with user data, e.g what information will we collect? how will we store it? 
+
+To meet our legal and moral obligations to users. We can implement various techniques such as password hashing which involves using a hash function to convert a password to a essentially a string that looks random in pattern. 
+
+We can also employ authorisation through limiting of user access, so that entities only have access to their data and authentication through login/password and multifactor-authentication, so that entities are who they claim to be. 
+
+Lastly we can also consult with cybersecurity experts to offer their recommendations on how data should be handled and to perform penetration tests on our systems for vulnerabilities.
 
 
-
+##### References
+* https://www.oaic.gov.au/privacy/guidance-and-advice/data-breach-preparation-and-response/part-1-data-breaches-and-the-australian-privacy-act/
+* https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines/
+* https://auth0.com/blog/hashing-passwords-one-way-road-to-security/
 
 
 ---
-## Q9.	Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+## Q9.	Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
 
 
-
-
----
-## Q10.	Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
-
-
-
-
+##### References
 
 ---
-## Q11.	Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+## Q10.	Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. (100-200)
+
+
+
+##### References
+
+---
+## Q11.	Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. (100-200)
+
+
+
+
+
+##### References
+
+---
+## Q12.	Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
+
+
+
+##### References
+
+---
+## Q13.	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
+
+
+
+
+##### References
 
 ---
 ## Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
@@ -169,12 +205,12 @@ Identifies all relationships / associations in a sophisticated relational model
  Designs a normalised schema (i.e. without data duplication) that facilitates extended functionality of the app
 
 
- Refs
+##### References
 
-* 4a.
+* 14a.
 * https://stackshare.io/gumtree-com/gumtree-com
 * https://builtwith.com/gumtree.com
-* 4b.
+* 14b.
 * https://myip.ms/view/web_hosting/616098/Marktplaats_B_v.html
 * https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
 * https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
