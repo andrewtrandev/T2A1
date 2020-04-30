@@ -3,8 +3,11 @@ https://coderacademy.instructure.com/courses/288/assignments/1464
 
 ## Q1.	Describe the architecture of a typical Rails application (200-300)
 
-The typical architecture off a Rails application relies on a framework known as the Model-View-Controller or MVC. It splits the functionality of the rails application into three distinct parts. These 3 parts are the Model which primarily deals with the database and business logic,
-the view which handles user interfaces and graphical components that the user will see and lastly the controller which acts as 
+The typical architecture off a Rails application relies on a framework known as the Model-View-Controller or MVC. It splits the functionality of the rails application into three distinct parts, the model, the view and the controller.
+
+The Model primarily deals with data and the manipulation of the database,
+The View handles user interfaces and graphical components that the user will see. 
+And lastly the Controller which interacts with both the model and views. The Controller handles incoming requests from users/browsers and also acts a a midde-man to direct requests from the view to the model and vice-versa.
 
 
 ##### References
@@ -119,7 +122,12 @@ Lastly we can also consult with cybersecurity experts to offer their recommendat
 
 ---
 ## Q9.	Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
+Main characteristics, descriptive
 
+A relational database organises it's data and relations into tables. These tables 
+
+Structure in which data is stored
+How relations are rep in that structure
 
 ##### References
 
