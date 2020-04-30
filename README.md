@@ -37,13 +37,13 @@ It may be useful to compare the Agile and Waterfall methodology as they're both 
 
 In the past software was mainly developed through the waterfall methodology, at the time it was a useful way to develop software as requirements and technology were slow in changing. It was also easy to understand and follow as each phase had clear goals. Customers were only involved at the start and end of a project. This could lead to issues such as customer's needs changing which are usually expensive to address due to rewriting of projects and code.
 
-In contrast, in Agile, customers are constantly involved throughout the development of the project and their feedback can be quickly incorporated into the project. Agile also relies on short sprints or cycles that involve designing, building, testing and review. These cycles can repeat and  this is in contrast to the waterfall method which generally advocates distinct phases and longer time periods. 
+In contrast, in Agile, customers are constantly involved throughout the development of the project and their feedback can be quickly incorporated into the project. Agile also relies on short sprints or cycles that involve designing, building, testing and review. These cycles can repeat and this is in contrast to the waterfall method which generally has longer time periods and non-repeating phases.
 
 Below is an example of a 3 cycles or sprints linking together.
 ![agile loop](docs/loop.png)
 
 
-In today's age with the rapid development of start-ups and software, organisations have to be flexible and quick to respond to customer's needs. The agile method caters to this need by allowing for rapid prototyping and development of software, this allow customers to examine the progress of software development, in contrast to the waterfall methodology, in which, projects may take years before they have a product to show.
+In today's age with the rapid development of start-ups and software, organisations have to be flexible and quick to respond to customer's needs. The agile method caters to this need by allowing for rapid prototyping and development of software, this allows customers to examine the progress of software development quickly, in contrast to the waterfall methodology, in which, projects may take years before they have a product to show.
 
 
 ### References     
@@ -79,11 +79,16 @@ Having suffered several cyber attacks in the past and resultant remedial audits 
 
 ## Q6.	Discuss and analyse requirements related to information system security and how they relate to the project
 
+Discuss - for and against
+Analyse - break the essay topic down into fundamental parts
+
+
+
 ## Q7. Discuss common methods of protecting information and data and how you would apply them to the project
 
 A common method of protecting information and data would be to implement authentication, this could be done through the use of a gem such as Devise to require users to have a login and password before they could access the application. A benefit of authentication is this would protect personal user data and information in a quick and simple way. Cons of using a user login system, is that it's up to users to be vigilant with their passwords and to also generate complex and unique passwords.
 
-We could also implement authorisation in our code which would restrict the permissions of users. For example we would only want users to be able to change their contact details and not someone else's. This also ties into the principle of giving entities the fewest privileges possible. For example an admin may have the power to remove a user but we would disable that function for anyone who wouldn't require it. This reduces our risk to vulnerabilities because if you gave that permission to users who didn't require it, they also become points of failure.
+We could also implement authorisation as a method to protect data, this would restrict the permissions of users. For example we would only want users to be able to change their contact details and not someone else's. This also ties into the principle of giving entities the fewest privileges possible. For example an admin may have the power to remove a user but we would disable that function for anyone who wouldn't require it e.g a user or even an employee. This reduces our risk to vulnerabilities because if you gave that permission to users or employees who didn't require it, they also become points of failure.
 
 
 Ref
@@ -118,7 +123,8 @@ Ref
  ### a. List and describe the software used by the app.
 Conducts research and describes the software used by an organisation (software / database)
 
-Gumtree uses a mix of HTML, CSS, Javascript, jQuery, React and Java in it's app. It uses AmazonCloudFront as a content delivery system and does this over nginx which is an open source web server. Gumtree also utilises Bootstrap as a framework for developing mobile-responsive designs. Other notable software include Paypal and Visa for payments.
+Gumtree uses a mix of HTML, CSS, Javascript, jQuery, React and Java in it's app. It uses AmazonCloudFront as a content delivery system and does this over nginx which is an open source web server. Gumtree also utilises Bootstrap as a framework for developing mobile-responsive designs. Other notable software include Paypal and Visa for payments and google analytics for marketing/analysis.
+
 
 
 Shown below is a fuller list of software used by the app - taken from stackshare
@@ -132,7 +138,8 @@ Conducts research and describes the infrastructure used by an organisation (hard
 
 The hardware used to host Gumtree would be web/data servers using nginx as the web server software. The web server software would allow for HTTP requests for content from clients to be handled and addressed.
 Gumtree also makes use of content delivery networks and cloud hosting which require a distributed network of servers. Specifically the servers for a content delivery network are geographically distanced while for cloud hosting the data is stored on different servers.
-
+In regards to cloud hosting, Gumtree uses Google Cloud hosting 
+#############Add in google hosting
 
  ### c. Describe the interaction of technologies within the app
 Describes the interaction of technologies and identifies their role and purpose in the system
