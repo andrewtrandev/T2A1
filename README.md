@@ -3,15 +3,31 @@ https://coderacademy.instructure.com/courses/288/assignments/1464
 
 ## Q1.	Describe the architecture of a typical Rails application (200-300)
 
-The typical architecture off a Rails application relies on a framework known as the Model-View-Controller or MVC. It splits the functionality of the rails application into three distinct parts, the model, the view and the controller.
+![rails mvc](/docs/mvcrails.png)
 
-The Model primarily deals with data and the manipulation of the database,
-The View handles user interfaces and graphical components that the user will see. 
-And lastly the Controller which interacts with both the model and views. The Controller handles incoming requests from users/browsers and also acts a a midde-man to direct requests from the view to the model and vice-versa.
+At a high level the typical Rails application will be coded under two guiding principles, DRY - Don't Repeat yourself, e.g don't duplicate code and "Convention over Configuration" which means rails has certain conventions that it wants you to use when developing in rails. e.g naming conventions such as matching names and capitalization.
 
+The typical architecture of a Rails application relies on a framework known as the Model-View-Controller or MVC. It splits the functionality of the rails application into three distinct parts, the model, the view and the controller.
+
+The Model (also known as active record) primarily deals with data and the manipulation of the database. The model also makes use of Object Relational Mapping to manipulate data which allows us to interact with the database without having to write SQL plus we get the added benefit of being able to switch databases e.g postgresql, mysql etc.
+The View (action view in rails) handles user interfaces and graphical components that the user will see. 
+And lastly the Controller (action controller) interacts with both the model and views. The Controller handles incoming requests from users/browsers and also acts as a middle-man to direct requests from the view to the model and vice-versa. Your standard application may make use of many different models, views and controllers.
+
+The typical rails application uses puma as webserver and relies on routes that are defined in routes.rb to handle http requests by finding the correct controller and action. It can be run locally on localhost:3000 or deployed on services such as heroku.
+
+The rails application may also have styling derived from the Asset Pipeline, the pipeline is a framework that allows rails to link assets and styling files together to allow for faster processing.
 
 ##### References
 * https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
+
+* https://guides.rubyonrails.org/getting_started.html#what-is-rails-questionmark
+
+* https://guides.rubyonrails.org/routing.html
+
+* https://blog.bitsrc.io/what-is-an-orm-and-why-you-should-use-it-b2b6f75f5e2a
+
+* image - https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/
+
 
 ---
 ## Q2.	Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database (150-250)
@@ -57,7 +73,7 @@ In today's age with the rapid development of start-ups and software, organisatio
 
 * https://www.projectmanager.com/software/use-cases/waterfall-methodology
 
-* https://www.mendix.com/blog/agile-process-why-you-need-feedback-loops-both-during-and-after-sprints/
+* image - https://www.mendix.com/blog/agile-process-why-you-need-feedback-loops-both-during-and-after-sprints/
 
 ## Q4.	Provide an overview and description of a standard source control workflow (100-200)
 
