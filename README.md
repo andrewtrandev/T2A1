@@ -168,16 +168,23 @@ How relations are rep in that structure
 
 
 
+
 ##### References
 
 ---
 ## Q13.	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 
+Linear search
+Possibly the simplest search to implement and understand the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then move onto index 1 and continue moving up the index until it found it's number.
 
-
+Binary search
+A binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted in some way for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 and we want to find the number 100. A binary search would first attempt to divide the input data and take the middle value, in this case it would be 68. It would then check if 68 is less than or greater than 100, since it is lesser it takes the upper half of the data, being 90 and 100 and 
 
 ##### References
 
+* https://www.geeksforgeeks.org/linear-search/
+* https://www.geeksforgeeks.org/binary-search/
+* https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/implementing-binary-search-of-an-array
 ---
 ## Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
  ### a. List and describe the software used by the app.
