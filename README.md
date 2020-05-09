@@ -19,13 +19,9 @@ The rails application may also have styling derived from the Asset Pipeline, the
 
 ##### References
 * https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm
-
 * https://guides.rubyonrails.org/getting_started.html#what-is-rails-questionmark
-
 * https://guides.rubyonrails.org/routing.html
-
 * https://blog.bitsrc.io/what-is-an-orm-and-why-you-should-use-it-b2b6f75f5e2a
-
 * image - https://betterexplained.com/articles/intermediate-rails-understanding-models-views-and-controllers/
 
 
@@ -66,30 +62,34 @@ In today's age with the rapid development of start-ups and software, organisatio
 
 ##### References   
 * https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
-    
 * https://www.infoworld.com/article/3237508/what-is-agile-methodology-modern-software-development-explained.html
-
 * https://www.guru99.com/waterfall-vs-agile.html
-
 * https://www.projectmanager.com/software/use-cases/waterfall-methodology
-
 * image - https://www.mendix.com/blog/agile-process-why-you-need-feedback-loops-both-during-and-after-sprints/
 
+
+---
 ## Q4.	Provide an overview and description of a standard source control workflow (100-200)
 
+A standard source control workflow would be implemented through the use of a version control system such as Git. Git helps to keep track of changes made to code, this is done through pushing snapshots of the current source code to an online or remote location known as a repository.
+In the typical project there will be one main source code known as the master branch which is not typically directly used when writing code.
+New features are typically developed in branches, developers can make use of branches which allow you to make a copy of the master code and edit it without affecting the original, this can ensure that the master branch always has working code. When the feature or code is completed on a branch it can be merged back with the master code, this would usually be done through a pull request which is essentially asking permission to merge the branch code with the master, the pull request also gives other developers a chance to review the code and suggest changes.
+Git also has extensive logs of changes made to code whether it's on the master branch or feature branches.
 
 
 ##### References
+* https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/
+* https://www.atlassian.com/git/tutorials/why-git
 
 ---
 ## Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
 
-
-Companies (including ACME Corporation) value previous project experience and case studies. The following set of questions relate to this RfQ-requirement.
-
+A standard software testing process could be the use of automated tests for 
 
 
 ##### References
+* https://www.guru99.com/automation-testing.html
+* https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
 
 ---
 
