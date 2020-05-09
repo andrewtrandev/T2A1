@@ -84,11 +84,16 @@ Git also has extensive logs of changes made to code whether it's on the master b
 ---
 ## Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
 
-A standard software testing process could be the use of automated tests for 
+A standard software testing process could be the use of automated testing, this testing involves the use of automation software to carry out the job of testing. 
+The process of automated testing would closely follow the software testing life cycle (STLC). It begins with gathering requirements which defines what should be tested, feasibility analysis - to see if automation is possible/within budget.
+A testing plan can then be made which will detail the criteria and strategy for the automation test, it may detail what automation software to be used, cost, training required. 
+Test case development will involve the creation of automation scripts. 
+running the automation tests and producing test reports of the results.
 
 
 ##### References
 * https://www.guru99.com/automation-testing.html
+* https://www.guru99.com/software-testing-life-cycle.html#2
 * https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
 
 ---
