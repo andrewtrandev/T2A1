@@ -180,16 +180,28 @@ How relations are rep in that structure
 ## Q13.	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 
 Linear search
-Possibly the simplest search to implement and understand, the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then continue moving up the index until it found it's number or reached the end and conclude the number did not exist. A linear search could be used on an unsorted array as you may need to look at each element to see if it is the one we want.
+Possibly the simplest search to implement and understand, the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example, for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then continue moving up the index until it found it's number or reached the end and conclude the number did not exist. A linear search could be used on an unsorted array as you may need to look at each element to see if it is the one we want.
 
 Binary search
-A binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted in some way for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 and we want to find the number 100. A binary search would first attempt to take the mid-point of the input data and check if this value was the one we're looking for, in this case it would be 68. It would then check if 68 is lesser than or greater than 100, since it is lesser it takes the upper half of the data, being 90 and 100 and 
+A binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted appropriately for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 sorted in ascending order and we wanted to find the number 100. A binary search would first attempt to take the mid-point of the input data and check if this value was the one we're looking for, in this case it would look at the last index, index 4, divide that in half to get 2, and then check if index 2 was 100. Since index 2 is 68 and not 100 it would then discard the lesser half of numbers and continue dividing and searching with the remaining data until the number was found or it concluded the number did not exist in the array.
+
+In regards to the perfomance/efficiency of Linear search against Binary search, it may not be relevant to compare the two as they are best used for different purposes. Linear search would mainly be used on unsorted arrays as you need to look at each element to determine if it's the correct one and Binary searches require appropriately sorted arrays.
+We can however compare the Big O notation or of these searches to see if there is a difference in performance/efficiency.
+Linear search's Big O notation or worst case is O(n), so as input data increases, it's time taken also increases linearly or directly proportional to input data.
+Binary search, however, can be more efficient when you have the appropriate sorted array, at it's worst it may have a Big O of O(logn) as input data grows, the complexity does not increase proportionally but logarithmically, which shows a curve of complexity that flattens out as input data increases to infinity.
+
+<br><br>
+The below graph shows the Big O of "Linear Time" -green line, which is what Linear Search's big O would look like and "Logarithmic Time" - red line which is what Binary Search's big O would be.
+![bigo](/docs/bigo.png)
 
 ##### References
 
 * https://www.geeksforgeeks.org/linear-search/
 * https://www.geeksforgeeks.org/binary-search/
 * https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/implementing-binary-search-of-an-array
+* https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
+  
+
 ---
 ## Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
  ### a. List and describe the software used by the app.
