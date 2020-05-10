@@ -28,11 +28,17 @@ The rails application may also have styling derived from the Asset Pipeline, the
 ---
 ## Q2.	Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database (150-250)
 
-ACME Corporation is very big on project management, documentation and process. This will be a key metric in their decision to award the project. The following set of questions relate to this RfQ-requirement.
+Postgresql is a database management system that is commonly used in web applications. It is supported by Heroku and recommended as the default for Rails applications. Postgresql is defined as an open-source object relational database management system, it makes use of SQL and also has additional features that extend the language.
 
 
 
 
+
+
+##### References
+* https://www.postgresqltutorial.com/what-is-postgresql/
+* https://www.postgresql.org/about/\
+* https://www.keycdn.com/blog/popular-databases
 
 ---
 ## Q3. Discuss the implementation of Agile project management methodology (200-300) 
