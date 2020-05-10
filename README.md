@@ -171,19 +171,28 @@ How relations are rep in that structure
 ---
 ## Q12.	Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 
+**Bubble sort** - considered one of the simplest sorting algorithms, bubble sort works by comparing one element to the element adjacent to it and swapping them if they're out of place and then repeatedly doing this for subsequent elements. Bubble sort may need several passes of an array to properly sort all elements and it will also have to do a final pass to check that all elements are in order.
 
+**Merge sort** - merge sort works by dividing the input data into sublists by dividing in half and then continually dividing the data into halves/sublists until it cannot anymore. It then reassembles each element into ordered sublists and then merges and both halves to get the final sorted array. Merge sorts are known as a type of divide and conquer algorithm and are effective in sorting linked lists. 
+
+To compare the performance/efficiency of the two sorting algorithms we can compare their big O notation. A bubble sort has a Big O or worst time complexity of O(n * n). This occurs when all elements in the array are sorted in reverse.<br>
+Merge sort has a Big O of O(nLogn) which as you can see in the below picture doesn't rise as dramatically in complexity as input data increases. 
+Whereas O(n * n) or O(n^2) quickly increases in complexity with input data size. So initiallly with small input data there may be a negligible difference between using either sort but as data input increases the poor performance of bubble sort becomes more apparent in comparison to merge sort.
+
+![bigochart](/docs/bigo2.png)
 
 
 ##### References
 
+* https://www.geeksforgeeks.org/bubble-sort/
+* https://www.geeksforgeeks.org/merge-sort/
+* -image - https://www.bigocheatsheet.com/
 ---
 ## Q13.	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 
-Linear search
-Possibly the simplest search to implement and understand, the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example, for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then continue moving up the index until it found it's number or reached the end and conclude the number did not exist. A linear search could be used on an unsorted array as you may need to look at each element to see if it is the one we want.
+**Linear search** - possibly the simplest search to implement and understand, the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example, for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then continue moving up the index until it found it's number or reached the end and conclude the number did not exist. A linear search could be used on an unsorted array as you may need to look at each element to see if it is the one we want.
 
-Binary search
-A binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted appropriately for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 sorted in ascending order and we wanted to find the number 100. A binary search would first attempt to take the mid-point of the input data and check if this value was the one we're looking for, in this case it would look at the last index, index 4, divide that in half to get 2, and then check if index 2 was 100. Since index 2 is 68 and not 100 it would then discard the lesser half of numbers and continue dividing and searching with the remaining data until the number was found or it concluded the number did not exist in the array.
+**Binary search** - a binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted appropriately for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 sorted in ascending order and we wanted to find the number 100. A binary search would first attempt to take the mid-point of the input data and check if this value was the one we're looking for, in this case it would look at the last index, index 4, divide that in half to get 2, and then check if index 2 was 100. Since index 2 is 68 and not 100 it would then discard the lesser half of numbers and continue dividing and searching with the remaining data until the number was found or it concluded the number did not exist in the array.
 
 In regards to the perfomance/efficiency of Linear search against Binary search, it may not be relevant to compare the two as they are best used for different purposes. Linear search would mainly be used on unsorted arrays as you need to look at each element to determine if it's the correct one and Binary searches require appropriately sorted arrays.
 We can however compare the Big O notation or of these searches to see if there is a difference in performance/efficiency.
@@ -200,7 +209,7 @@ The below graph shows the Big O of "Linear Time" -green line, which is what Line
 * https://www.geeksforgeeks.org/binary-search/
 * https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/implementing-binary-search-of-an-array
 * https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
-  
+* image - https://towardsdatascience.com/linear-time-vs-logarithmic-time-big-o-notation-6ef4227051fb
 
 ---
 ## Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
