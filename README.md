@@ -85,16 +85,16 @@ Git also has extensive logs of changes made to code whether it's on the master b
 ## Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
 
 A standard software testing process could be the use of automated testing, this testing involves the use of automation software to carry out the job of testing. 
-The process of automated testing would closely follow the software testing life cycle (STLC). It begins with gathering requirements which defines what should be tested, feasibility analysis - to see if automation is possible/within budget.
-A testing plan can then be made which will detail the criteria and strategy for the automation test, it may detail what automation software to be used, cost, training required. 
-Test case development will involve the creation of automation scripts. 
-running the automation tests and producing test reports of the results.
-
+The process of automated testing would closely follow the software testing life cycle (STLC). It begins with gathering requirements which defines what should be tested, a feasibility analysis - to see if automation is possible/within budget, a requirement traceability matrix - which would detail test scenarios and their status(whether they pass/fail).
+A testing plan can then be made which will detail the criteria and strategy for the automation test, it may detail what automation software to be used, costs involved, training required and what automation testing framework may be used. 
+Test case development and execution will involve the creation of automation scripts for each test case and the running of those automation tests. Detailed logs and reports will be collected regarding each case. 
+The test cycle closure is the final stage and will be an evaluation of the overall cycle and metrics obtained from testing. This may involve analysis of test findings and list strategies to be incorporated into future testing cycles.
 
 ##### References
 * https://www.guru99.com/automation-testing.html
 * https://www.guru99.com/software-testing-life-cycle.html#2
 * https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing
+* https://www.guru99.com/traceability-matrix.html
 
 ---
 
@@ -180,10 +180,10 @@ How relations are rep in that structure
 ## Q13.	Identify and explain the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 
 Linear search
-Possibly the simplest search to implement and understand the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then move onto index 1 and continue moving up the index until it found it's number.
+Possibly the simplest search to implement and understand, the linear search has a time complexity of O(n) and involves looking at every element one after the other. For example for an array of 5 numbers a linear search would start at index 0 and check if the number is the one it was looking for and then continue moving up the index until it found it's number or reached the end and conclude the number did not exist. A linear search could be used on an unsorted array as you may need to look at each element to see if it is the one we want.
 
 Binary search
-A binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted in some way for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 and we want to find the number 100. A binary search would first attempt to divide the input data and take the middle value, in this case it would be 68. It would then check if 68 is less than or greater than 100, since it is lesser it takes the upper half of the data, being 90 and 100 and 
+A binary search works by continually dividing the data in half until it finds the correct element. It usually requires the data to be sorted in some way for it to be effective. An example to demonstrate this could be 5 numbers 10,35,68,90,100 and we want to find the number 100. A binary search would first attempt to take the mid-point of the input data and check if this value was the one we're looking for, in this case it would be 68. It would then check if 68 is lesser than or greater than 100, since it is lesser it takes the upper half of the data, being 90 and 100 and 
 
 ##### References
 
@@ -193,11 +193,21 @@ A binary search works by continually dividing the data in half until it finds th
 ---
 ## Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
  ### a. List and describe the software used by the app.
-Conducts research and describes the software used by an organisation (software / database)
 
-Gumtree uses a mix of HTML, CSS, Javascript, jQuery, React and Java in it's app. It uses AmazonCloudFront as a content delivery system and does this over nginx which is an open source web server. Gumtree also utilises Bootstrap as a framework for developing mobile-responsive designs. Other notable software include Paypal and Visa for payments and google analytics for marketing/analysis.
+HTML
+CSS - styling of html
+Javascript
+jQuery
+React
+Java
+Amazon CloudFront - content delivery system
+Nginx - open source web server
+Bootstrap - framework for developing mobile-responsive designs
+Google cloud hosting - hosting of website
+Google analtics - marketing and traffic analysis
+Paypal / Visa - payment tools
 
-
+<!-- Do programming languages count as software? -->
 
 Shown below is a fuller list of software used by the app - taken from stackshare
 ![gumtreestack](/docs/gumtreestack.png)
@@ -206,17 +216,14 @@ Shown below is a fuller list of software used by the app - taken from stackshare
 
 
  ### b. Describe the hardware used to host the app.
-Conducts research and describes the infrastructure used by an organisation (hardware / networks) -Shows a full understanding of the hosting infrastructure
 
 The hardware used to host Gumtree would be web/data servers using nginx as the web server software. The web server software would allow for HTTP requests for content from clients to be handled and addressed.
 Gumtree also makes use of content delivery networks and cloud hosting which require a distributed network of servers. Specifically the servers for a content delivery network are geographically distanced while for cloud hosting the data is stored on different servers.
-In regards to cloud hosting, Gumtree uses Google Cloud hosting 
-#############Add in google hosting
+In regards to cloud hosting, Gumtree uses Google Cloud hosting to make it's website scalable and reliable.
 
  ### c. Describe the interaction of technologies within the app
-Describes the interaction of technologies and identifies their role and purpose in the system
 
-A client would request content from the browser which would be sent as a HTTP request to nginx(webserver software). Nginx would send back a response which could be a mixture of HTML, CSS, javascript, jQuery and React, these technologies would form the basis for a responsive website. This response could also be passed to Amazon CloudFront which would attempt to send back the response from the server to the client through the most effecive path.
+Gumtree would be hosted through google cloust hosting, a user would request content from the browser which would be sent as a HTTP request to nginx(webserver software). Nginx would send back a response which could be a mixture of HTML, CSS, javascript, jQuery and React, these technologies would form the basis for a responsive website. This response could also be passed to Amazon CloudFront which would attempt to send back the response from the server to the client through the most effecive path.
 
 
 
