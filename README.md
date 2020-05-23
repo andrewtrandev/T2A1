@@ -1,7 +1,7 @@
 
 https://coderacademy.instructure.com/courses/288/assignments/1464
 
-## Q1.	Describe the architecture of a typical Rails application (200-300)
+### Q1.	Describe the architecture of a typical Rails application (200-300)
 
 ![rails mvc](/docs/mvcrails.png)
 
@@ -26,7 +26,7 @@ The rails application may also have styling derived from the Asset Pipeline, the
 
 
 ---
-## Q2.	Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database (150-250)
+### Q2.	Identify a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database (150-250)
 
 Postgresql is a database management system that is commonly used in web applications. It is supported by Heroku and recommended as the default for Rails applications. Postgresql is defined as an open-source object relational database management system, it makes use of SQL and also has additional features that extend the language.
 
@@ -44,7 +44,7 @@ The cons of Postgresql include lower popularity than other databases such as Ora
 * https://eng.uber.com/postgres-to-mysql-migration/
 
 ---
-## Q3. Discuss the implementation of Agile project management methodology (200-300) 
+### Q3. Discuss the implementation of Agile project management methodology (200-300) 
 
 
 The Agile methodology was developed with the goal of improving software development. Agile's four main values are an emphasis 
@@ -78,7 +78,7 @@ In today's age with the rapid development of start-ups and software, organisatio
 
 
 ---
-## Q4.	Provide an overview and description of a standard source control workflow (100-200)
+### Q4.	Provide an overview and description of a standard source control workflow (100-200)
 
 A standard source control workflow would be implemented through the use of a version control system such as Git. Git helps to keep track of changes made to code, this is done through pushing snapshots of the current source code to an online or remote location known as a repository.
 In the typical project there will be one main source code known as the master branch which is not typically directly used when writing code.
@@ -91,7 +91,7 @@ Git also has extensive logs of changes made to code whether it's on the master b
 * https://www.atlassian.com/git/tutorials/why-git
 
 ---
-## Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
+### Q5.	Provide an overview and description of a standard software testing process (e.g. manual testing) (100-200)
 
 A standard software testing process could be the use of automated testing, this testing involves the use of automation software to carry out the job of testing. 
 The process of automated testing would closely follow the software testing life cycle (STLC). It begins with gathering requirements which defines what should be tested, a feasibility analysis - to see if automation is possible/within budget, a requirement traceability matrix - which would detail test scenarios and their status(whether they pass/fail).
@@ -109,24 +109,32 @@ The test cycle closure is the final stage and will be an evaluation of the overa
 
 Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
 
-## Q6.	Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
+### Q6.	Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
 
 Discuss - for and against
 Analyse - break the essay topic down into fundamental parts
 
+In regards to information system security requirements there are 3 major aspects that are usually regarded as important. They are:
+* Confidentiality - who has access to information, confidentiality deals with authorisation and 
+* Integrity - data isn't corrupted and only changed with authorisation
+* Availability - making sure that authorised users have access
 
 
+There are also many other requirements to information security that could affect the project such as designing with ease of use 
 
 
 
 
 ##### References
+* https://www.techopedia.com/definition/24840/information-systems-security-infosec
+* https://www.nap.edu/read/1581/chapter/4
 
-## Q7. Discuss common methods of protecting information and data and how you would apply them to the project (100-200)
+---
+### Q7. Discuss common methods of protecting information and data and how you would apply them to the project (100-200)
 
 A common method of protecting information and data would be to implement authentication, this could be done through the use of a gem such as Devise to require users to have a login and password before they could access the application. A benefit of authentication is this would protect personal user data and information in a quick and simple way. Cons of using a user login system, is that it's up to users to be vigilant with their passwords and to also generate complex and unique passwords.
 
-We could also implement authorisation as a method to protect data, this would restrict the permissions of users. For example we would only want users to be able to change their contact details and not someone else's. This also ties into the principle of giving entities the fewest privileges possible. For example an admin may have the power to remove a user but we would disable that function for anyone who wouldn't require it e.g a user or even an employee. This reduces our risk to vulnerabilities because if you gave that permission to users or employees who didn't require it, they also become points of failure.
+We could also implement authorisation as a method to protect data, this would restrict the permissions of users. For example we would only want users to be able to change their contact details and not someone else's. This also ties into the principle of giving entities the fewest privileges possible. For example an admin may have the power to remove a user but we would disable that function for anyone who wouldn't require it, e.g other users or even an employee. This reduces our risk to vulnerabilities because if you gave that permission to users or employees who didn't require it, they also become points of failure.
 
 
 ##### References
@@ -134,7 +142,7 @@ We could also implement authorisation as a method to protect data, this would re
 * https://www.synopsys.com/blogs/software-security/complete-web-application-security-testing-checklist/
 
 ---
-## Q8.	Research what your legal obligations are in relation to handling user data and how they can be met for the project (100-200)
+### Q8.	Research what your legal obligations are in relation to handling user data and how they can be met for the project (100-200)
 
 According to the Office of the Australian Information Commissioner (OIAC), any organisation must notify individuals when a data breach is likely to cause serious harm to the individual.
 
@@ -145,9 +153,9 @@ Before we even write any code we can plan out what we want to do with user data,
 
 To meet our legal and moral obligations to users. We can implement various techniques such as password hashing which involves using a hash function to convert a password to a essentially a string that looks random in pattern. 
 
-We can also employ authorisation through limiting of user access, so that entities only have access to their data and authentication through login/password and multifactor-authentication, so that entities are who they claim to be. 
+We can also employ authorisation through limiting of user access, so that entities only have access to their own data and authentication through login/password and multifactor-authentication, so that entities logging in are who they claim to be. 
 
-Lastly we can also consult with cybersecurity experts to offer their recommendations on how data should be handled and to perform penetration tests on our systems for vulnerabilities.
+Lastly we can also consult with cybersecurity companies to listen to their recommendations on what legal obligations we should be adhering to, how data should be handled and to perform penetration tests on our systems for vulnerabilities.
 
 
 ##### References
@@ -157,7 +165,7 @@ Lastly we can also consult with cybersecurity experts to offer their recommendat
 
 
 ---
-## Q9.	Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
+### Q9.	Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
 Main characteristics, descriptive
 
 A relational database organises it's data and relations into tables. These tables 
@@ -168,14 +176,14 @@ How relations are rep in that structure
 ##### References
 
 ---
-## Q10.	Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. (100-200)
+### Q10.	Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. (100-200)
 
 
 
 ##### References
 
 ---
-## Q11.	Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. (100-200)
+### Q11.	Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database. (100-200)
 
 
 
@@ -184,7 +192,7 @@ How relations are rep in that structure
 ##### References
 
 ---
-## Q12.	Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
+### Q12.	Identify and explain the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) (300-500)
 
 **Bubble sort** - considered one of the simplest sorting algorithms, bubble sort works by comparing one element to the element adjacent to it and swapping them if they're out of place and then repeatedly doing this for subsequent elements. Bubble sort may need several passes of an array to properly sort all elements and it will also have to do a final pass to check that all elements are in order.
 
@@ -227,7 +235,7 @@ The below graph shows the Big O of "Linear Time" -green line, which is what Line
 * image - https://towardsdatascience.com/linear-time-vs-logarithmic-time-big-o-notation-6ef4227051fb
 
 ---
-## Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
+### Q 14. 	Conduct research into a marketplace website (app) and answer the following parts:  
  ### a. List and describe the software used by the app.
 
 HTML
@@ -250,35 +258,36 @@ Shown below is a fuller list of software used by the app - taken from stackshare
 
 
 
-
+---
  ### b. Describe the hardware used to host the app.
 
 The hardware used to host Gumtree would be web/data servers using nginx as the web server software. The web server software would allow for HTTP requests for content from clients to be handled and addressed.
 Gumtree also makes use of content delivery networks and cloud hosting which require a distributed network of servers. Specifically the servers for a content delivery network are geographically distanced while for cloud hosting the data is stored on different servers.
 In regards to cloud hosting, Gumtree uses Google Cloud hosting to make it's website scalable and reliable.
 
+---
  ### c. Describe the interaction of technologies within the app
 
 Gumtree would be hosted through google cloust hosting, a user would request content from the browser which would be sent as a HTTP request to nginx(webserver software). Nginx would send back a response which could be a mixture of HTML, CSS, javascript, jQuery and React, these technologies would form the basis for a responsive website. This response could also be passed to Amazon CloudFront which would attempt to send back the response from the server to the client through the most effecive path.
 
 
-
+---
  ### d. Describe the way data is structured within the app
 Describe (in general terms) the data structure of two-sided marketplace applications (e.g. eBay, Airbnb)
 
 
 
-
+---
  ### e. Identify entities which must be tracked by the app
 Identify entities which must be tracked by the application
 
 
-
+---
  ### f. Identify the relationships and associations between the entities you have identified in part (e)
 Identifies all relationships / associations in a sophisticated relational model
 
 
-
+---
  ### g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 
  Designs a normalised schema (i.e. without data duplication) that facilitates extended functionality of the app
@@ -296,4 +305,4 @@ Identifies all relationships / associations in a sophisticated relational model
 * https://www.wirehive.com/thoughts/cloud-hosting-work/
 
 
-
+---
