@@ -30,15 +30,18 @@ The rails application may also have styling derived from the Asset Pipeline, the
 
 Postgresql is a database management system that is commonly used in web applications. It is supported by Heroku and recommended as the default for Rails applications. Postgresql is defined as an open-source object relational database management system, it makes use of SQL and also has additional features that extend the language.
 
+Postgresql makes use of an object relational database which is useful for features such as table inheritance that arn't on other database management systems such as MySQL. The pros of Postgresql include it being highly extensible, supports wide range of data types, and also handles concurrency better than MySQL.
 
-
-
+The cons of Postgresql include lower popularity than other databases such as Oracle and MySQL, this could lead to issues such as limited documentation, lack of tools and support. In an article by Uber, they talk about moving from Postgres to MySQL due to issues they had with difficulty upgrading to newer releases of Postgres, inefficient data replication, inefficient data writing and issues with table corruption- this was due to a bug in one of the newer releases.
 
 
 ##### References
 * https://www.postgresqltutorial.com/what-is-postgresql/
 * https://www.postgresql.org/about/\
 * https://www.keycdn.com/blog/popular-databases
+* https://developer.okta.com/blog/2019/07/19/mysql-vs-postgres
+* https://db-engines.com/en/ranking
+* https://eng.uber.com/postgres-to-mysql-migration/
 
 ---
 ## Q3. Discuss the implementation of Agile project management methodology (200-300) 
@@ -110,6 +113,12 @@ Having suffered several cyber attacks in the past and resultant remedial audits 
 
 Discuss - for and against
 Analyse - break the essay topic down into fundamental parts
+
+
+
+
+
+
 
 ##### References
 
