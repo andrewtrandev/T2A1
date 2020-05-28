@@ -191,22 +191,41 @@ Lastly, we can also consult with cybersecurity companies to have them assist us 
 ### Q9.	Describe the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure. (100-200)
 ```
 
-Main characteristics, descriptive
+A relational database model organises it's database into a collection of relations or tables. It should be noted that this doesn't affect the physical storage of data. A table consists of rows and columns, each row (also known as a tuple) in a table signifies a unique record within the table and represents related data, each row will also have a column called a primary key that uniquely identifies it, while the other columns in a table will list attributes of the data being modeled. Relations between different tables can be encoded through the use of foreign keys, which are primary keys that sit in other tables. 
 
-A relational database organises it's data and relations into tables. These tables 
+It should also be noted that sometimes a combination of two or more columns can be used as a primary key and this is known as a composite key.
+More specifically, regarding data stored in columns, the data is typically of one data type, e.g for a "dollar amount" column that stores integers,should not have strings in it.
 
-Structure in which data is stored
-How relations are rep in that structure
+<br>
+
+Below is an image of a typical relation/table
+
+![relational db](docs/q9db.png)
+
 
 ##### References
+* https://www.oracle.com/database/what-is-a-relational-database/
+* https://databasemanagement.fandom.com/wiki/Relational_Database_Model
+* https://opentextbc.ca/dbdesign01/chapter/chapter-7-the-relational-data-model/
+* image - https://www.guru99.com/relational-data-model-dbms.html
+* https://www.techopedia.com/definition/6572/composite-key
 
 ---
 ```
 ### Q10.	Describe the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database. (100-200)
 ```
 
+There are 3 typical types of data integrity that we can talk about when trying to enforce data integrity upon a relational database. These types are:
+* Entity Integrity (also known as key constraints) - this involves the use of primary keys to uniquely define records within a database e.g primary key can't be null
+* Referential Integrity - this refers to the validity of foreign keys and whether they point to valid tables or should be null
+* Domain Integrity - this refers to columns being within the defined domain, e.g an "age" column shouldn't have negative numbers
+
+With these integrity constraints in mind, we can enforce these in a relational database by designing so that rows have primary keys and that they can't be null, this covers entity integrity. Referential integrity could be enforced by having checks for whether foreign keys exist in the foreign table. Domain integrity would be enforced through validation checks, this could be done backend validation, where we check the data type is the one we're expecting and if the input data is within the expected range e.g "age" shouldn't be a negative number.
+
 
 ##### References
+* https://www.techopedia.com/definition/811/data-integrity-databases
+* https://www.tutorialspoint.com/dbms/relational_data_model.htm
 
 ---
 ```
