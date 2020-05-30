@@ -124,10 +124,6 @@ The test cycle closure is the final stage and will be an evaluation of the overa
 ---
 
 ```
-Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.
-```
-
-```
 Q6.	Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
 ```
 
@@ -176,7 +172,7 @@ Q8.	Research what your legal obligations are in relation to handling user data a
 The Office of the Australian Information Comissioner (OIAC) provides a set of guidelines known as The Australian Privacy Principles (APP), the APP lists 13 principles that help protect the privacy of an individual. With these guidelines as a reference we can construct a general idea of how we should be handling user data.
 
 <br>
-Displayed below is a summary of the Australia Privacy Principles
+Displayed below is a summary of the Australian Privacy Principles
 
 ![app 13 principles](/docs/app13.png)
 <br>
@@ -251,8 +247,23 @@ Mention ORM
 CRUD through a resource
 DML - data manipulation langauge
 
-#### References
+The manipulative aspects of the relational database model work through the use of Data Manipulation Language (DML) which is a sub-language of Structured Query Language (SQL).
 
+DML allows one to use commands to manipulate data in the database, these commands can be applied on single or multiple records. The main commands are:
+
+
+- Insert - used to insert values into the rows of a table
+- Select - used to retrieve or fetch records/rows from a table
+- Update - used to modify records
+- Delete - used to remove records from a table
+
+
+
+#### References
+- https://www.pluralsight.com/guides/sql-data-manipulation-language
+- https://www.educba.com/data-manipulation-language/
+- https://www.techopedia.com/definition/1179/data-manipulation-language-dml
+  
 ---
 
 ```
