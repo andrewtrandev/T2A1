@@ -334,7 +334,7 @@ b. Describe the hardware used to host the app.
 
 The hardware used to host Gumtree would be web/data servers using nginx as the web server software. The web server software would allow for HTTP requests for content from clients to be handled and addressed.
 Gumtree also makes use of content delivery networks (Amazon CloudFront) and cloud hosting (Google Cloud hosting) which require a distributed network of servers.
-The servers for Amazon CloudFront and Google Cloud hosting are geographically distance. This allows these services to offer lower latency and travel time for regions closer to these servers.
+The servers for Amazon CloudFront and Google Cloud hosting are geographically distanced. This allows these services to offer lower latency and travel time for regions closer to these servers.
 In regards to cloud hosting, Gumtree uses Google Cloud hosting to make it's website scalable and reliable.
 
 ---
@@ -352,11 +352,10 @@ d. Describe the way data is structured within the app
 Describe (in general terms) the data structure of two-sided marketplace applications (e.g. eBay, Airbnb)
 ```
 
-Data in a two-sided marketplace would typically be strucutured through relations/tables. This allows us to easily create associations between data and provides a way to group related data together. For example for the model of a User we could store all the relevant data in a table called Users to represent it, a user could consist of an email (string data type), password (encrypted string) and username (string).
+Data in a two-sided marketplace would typically be structured in a relational database model, that organises our data and it's relevant relationships into relations. 
 
-<!-- verbal erd diagram -->
-<!-- and what type of data is stored in each table -->
- <!-- e.g for gumtree we're good to need a users table that can have listings associated with it, would we talk about tables and relations? -->
+For example, for Gumtree we're going to need a User's table, a User could have the attributes of an Email (string data type), Password (encrypted string) and username (string). We could then make a table for Listings and define the relation between the Users table and Listings table. E.g A User can have zero or many Listings and a Listing belongs to a User.
+
 
 ```
 e. Identify entities which must be tracked by the app
@@ -365,12 +364,12 @@ Identify entities which must be tracked by the application
 
 In an application like Gumtree, entities that need to be tracked include:
 
-- Users (location, seller rating, email, password, username, name)
-- Contact Details (user_id, email, location, name, phone number)
+- Users (email, password, name, ratings)
+- Contact Details (user_id, email, location, phone number, listing_id)
 - Listings (price, description, posting date, condition, price_options, contact details)
-- Ratings ( user_id, rating)
-- Product Categories (category)
-- Watchlist (listing, last_updated )
+- Ratings (user_id, rating)
+- Product Categories (category, description)
+- Watchlist (listing_id, user_id )
 - Messages (user_id, user_id2, messages)
 
 Since GumTree generally assumes cash as payment and doesn't handle the fulfillment of listings, it doesn't keep any log of purchases. Users are expected to meet-up for the exchange of goods or trust that their product will be sent. It should also be noted you can place contact details on the user or different contact details in the listing itself.
@@ -381,21 +380,28 @@ Since GumTree generally assumes cash as payment and doesn't handle the fulfillme
 f. Identify the relationships and associations between the entities you have identified in part (e)
 ```
 
-* Users can have zero or many listings
-* Users can have zero or many ratings
-* Users can have zero or many messages
-* Users can have zero or many listings on their watchlist
-* Users can have only 1 contact details
+* Users have zero or many listings
+* Users have zero or many ratings
+* Users have zero or many messages
+* Users have zero or many listings on their watchlist
+* Users have only one contact details
 
-- Listings can only have 1 category
-- Listings can only have one user (in the case of creation)
-- Listings can only have one contact details
+- Listings only have 1 Product Category
+- Listings only belong to one User
+- Listings only have one contact details
+- Listings can belong to zero or many watchlists
 
-* Messages can only have one user
+* Messages only belong to one user
 
-* Ratings can only have one user
+* Ratings only belong to one user
 
-* Product Categories can have zero or many listings
+* Product Categories have zero or many listings
+
+- Contact details can only have one user
+- Contact details can belong to zero or many listings
+
+* Watchlist can belong to one user
+* Watchlist can have zero or many listings
 
 ---
 
@@ -403,7 +409,10 @@ f. Identify the relationships and associations between the entities you have ide
 g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)
 ```
 
-Designs a normalised schema (i.e. without data duplication) that facilitates extended functionality of the app
+Below is ERD for Gumtree
+
+![gumtree erd](/docs/gumerd.png)
+
 
 #### References
 
@@ -415,5 +424,7 @@ Designs a normalised schema (i.e. without data duplication) that facilitates ext
 - https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server
 - https://www.cloudflare.com/learning/cdn/what-is-a-cdn/
 - https://www.wirehive.com/thoughts/cloud-hosting-work/
-
+- 14e - g
+- https://www.gumtree.com.au/
+- https://www.gumtree.com.au/p-post-ad.html
 ---
