@@ -131,21 +131,26 @@ Having suffered several cyber attacks in the past and resultant remedial audits 
 Q6.	Discuss and analyse requirements related to information system security and how they relate to the project (100-200)
 ```
 
-Discuss - for and against
-Analyse - break the essay topic down into fundamental parts
-
 In regards to information system security requirements there are 3 major aspects that are regarded as important. They are:
 
-- Confidentiality - who has access to information, confidentiality deals with authorisation and
-- Integrity - data isn't corrupted and only changed with authorisation
-- Availability - making sure that authorised users have access
+- Confidentiality - who has access to information, confidentiality deals with authorisation and generally keeping information safe
+- Integrity - making sure data isn't corrupted, data is specific enough, and only changed with authorisation
+- Availability - making sure that authorised users have prompt access and services are available. Can be important in regards to critical services such as air traffic control and many businesses that operate online.
 
-There are also many other requirements to information security that could affect the project such as designing with ease of use
+There are also other requirements such as business, regulatory and customer obligations that we must meet. Depending on the project that is being built we need to analyse to what degree, do we enforce each of our requirements and obligations. E.g for a health service app we may need stricter record-keeping and strict authorisation on access to records to comply with The Privacy Act. 
+
+The best option would be to systematically analyse our requirements starting with the regulatory obligations and move down the chain of concern. It may also be useful to produce a framework or report on our infosec requirements. 
+
+Below is an example of requirements that we could base a report on
+
+![infosec framework](docs/infosec.PNG)
 
 #### References
 
 - https://www.techopedia.com/definition/24840/information-systems-security-infosec
 - https://www.nap.edu/read/1581/chapter/4
+- https://www.proserveit.com/blog/information-security-requirements
+- image - https://www.protectivesecurity.gov.au/information/Pages/default.aspx
 
 ---
 
